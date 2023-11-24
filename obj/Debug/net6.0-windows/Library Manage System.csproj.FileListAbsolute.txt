@@ -1,0 +1,31 @@
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\Library Manage System.exe
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\Library Manage System.deps.json
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\Library Manage System.runtimeconfig.json
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\Library Manage System.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\Library Manage System.pdb
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.csproj.AssemblyReference.cache
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.CustMessageBox.resources
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.ManiMenu.resources
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.csproj.GenerateResource.cache
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.AssemblyInfoInputs.cache
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.AssemblyInfo.cs
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.csproj.CoreCompileInputs.cache
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\refint\Library Manage System.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.pdb
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.genruntimeconfig.cache
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\ref\Library Manage System.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.ManageBooks.resources
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\Library Manage System.dll.config
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.DisplayBooks.resources
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library Manage System.csproj.CopyComplete
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.DisplayBorrowers.resources
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.ManageBorrowers.resources
+C:\Users\kenny\Desktop\GP\source\Library Manage System\obj\Debug\net6.0-windows\Library_Manage_System.MemberList.resources
