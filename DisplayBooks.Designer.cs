@@ -35,19 +35,29 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(2, 27);
+            dataGridView1.Location = new Point(2, 36);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(880, 422);
+            dataGridView1.Size = new Size(1006, 563);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(706, 465);
+            backBtn.Location = new Point(807, 620);
+            backBtn.Margin = new Padding(3, 4, 3, 4);
             backBtn.Name = "backBtn";
-            backBtn.Size = new Size(163, 46);
+            backBtn.Size = new Size(186, 61);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
             backBtn.UseVisualStyleBackColor = true;
@@ -55,12 +65,13 @@
             // 
             // DisplayBooks
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(196, 210, 245);
-            ClientSize = new Size(886, 513);
+            ClientSize = new Size(1013, 684);
             Controls.Add(backBtn);
             Controls.Add(dataGridView1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "DisplayBooks";
             Text = "DisplayBooks";
             Load += DisplayBooks_Load;

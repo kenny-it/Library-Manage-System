@@ -26,7 +26,7 @@ namespace Library_Manage_System
 
         private void DisplayBooks_Load(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            string connectionString = Properties.Settings.Default.connString;
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -48,6 +48,11 @@ namespace Library_Manage_System
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

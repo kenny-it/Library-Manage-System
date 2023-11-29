@@ -27,5 +27,23 @@ namespace Library_Manage_System
             DisplayBooks displayBooks = new DisplayBooks();
             displayBooks.ShowDialog();
         }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            SearchBook searchBook = new SearchBook();
+            searchBook.ShowDialog();
+        }
+
+        private void Addbtn_Click(object sender, EventArgs e)
+        {
+            AddBook addBook = new AddBook();
+            addBook.ShowDialog();
+        }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            RemoveBook removeBook = new RemoveBook();
+            removeBook.ShowDialog();
+        }
     }
 }

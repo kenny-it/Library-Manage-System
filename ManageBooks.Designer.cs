@@ -37,9 +37,10 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(611, 363);
+            backBtn.Location = new Point(698, 484);
+            backBtn.Margin = new Padding(3, 4, 3, 4);
             backBtn.Name = "backBtn";
-            backBtn.Size = new Size(133, 45);
+            backBtn.Size = new Size(152, 60);
             backBtn.TabIndex = 0;
             backBtn.Text = "Back";
             backBtn.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // DisplayBtn
             // 
-            DisplayBtn.Location = new Point(79, 58);
+            DisplayBtn.Location = new Point(90, 77);
+            DisplayBtn.Margin = new Padding(3, 4, 3, 4);
             DisplayBtn.Name = "DisplayBtn";
-            DisplayBtn.Size = new Size(146, 48);
+            DisplayBtn.Size = new Size(167, 64);
             DisplayBtn.TabIndex = 1;
             DisplayBtn.Text = "1.1 Display Book";
             DisplayBtn.UseVisualStyleBackColor = true;
@@ -57,41 +59,48 @@
             // 
             // RemoveBtn
             // 
-            RemoveBtn.Location = new Point(415, 201);
+            RemoveBtn.Location = new Point(474, 268);
+            RemoveBtn.Margin = new Padding(3, 4, 3, 4);
             RemoveBtn.Name = "RemoveBtn";
-            RemoveBtn.Size = new Size(146, 48);
+            RemoveBtn.Size = new Size(167, 64);
             RemoveBtn.TabIndex = 2;
             RemoveBtn.Text = "1.4 Remove book";
             RemoveBtn.UseVisualStyleBackColor = true;
+            RemoveBtn.Click += RemoveBtn_Click;
             // 
             // SearchBtn
             // 
-            SearchBtn.Location = new Point(79, 201);
+            SearchBtn.Location = new Point(90, 268);
+            SearchBtn.Margin = new Padding(3, 4, 3, 4);
             SearchBtn.Name = "SearchBtn";
-            SearchBtn.Size = new Size(146, 48);
+            SearchBtn.Size = new Size(167, 64);
             SearchBtn.TabIndex = 3;
             SearchBtn.Text = "1.2 Search book";
             SearchBtn.UseVisualStyleBackColor = true;
+            SearchBtn.Click += SearchBtn_Click;
             // 
             // Addbtn
             // 
-            Addbtn.Location = new Point(414, 58);
+            Addbtn.Location = new Point(473, 77);
+            Addbtn.Margin = new Padding(3, 4, 3, 4);
             Addbtn.Name = "Addbtn";
-            Addbtn.Size = new Size(146, 48);
+            Addbtn.Size = new Size(167, 64);
             Addbtn.TabIndex = 5;
             Addbtn.Text = "1.3 Add book";
             Addbtn.UseVisualStyleBackColor = true;
+            Addbtn.Click += Addbtn_Click;
             // 
             // ManageBooks
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(Addbtn);
             Controls.Add(SearchBtn);
             Controls.Add(RemoveBtn);
             Controls.Add(DisplayBtn);
             Controls.Add(backBtn);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ManageBooks";
             Text = "Manage Books";
             ResumeLayout(false);
