@@ -29,11 +29,11 @@ namespace Library_Manage_System
                 MessageBox.Show("Invalid input. Please enter a valid year that is not negative and does not exceed the current year.");
                 return;
             }
-
+            
             // check Tile, Author, Publisher is empty or not
-            if (TitleText.Text.Trim() == "" || AuthorText.Text.Trim() == "" || PublisherText.Text.Trim() == "")
+            if (IDText.Text.Trim() == "" || TitleText.Text.Trim() == "" || AuthorText.Text.Trim() == "" || PublisherText.Text.Trim() == "")
             {
-                MessageBox.Show("The title, author, and publisher cannot be empty."); return;
+                MessageBox.Show("The ID, title, author, and publisher cannot be empty."); return;
             }
 
             using(SqlConnection conn = new SqlConnection(connectionString))
