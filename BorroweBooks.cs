@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace Library_Manage_System
 {
@@ -24,11 +25,11 @@ namespace Library_Manage_System
         {
             // get Book Id and borrower id
             string bookID = BookIDText.Text.Trim();
-            int borrowerID = (int)BorrowerIDText.Value;
+            string borrowerID = BorrowerIDText.Text.Trim();
             
 
             // verify the book id and borrower id valid or not
-            if (bookID == "" || borrowerID <= 0)
+            if (bookID == "" || borrowerID == "")
             {
                 MessageBox.Show("Invalid book id or borrower id. Please input the valid value.");
                 return;
@@ -46,7 +47,7 @@ namespace Library_Manage_System
                     cmd.Parameters.AddWithValue("@BOOID", bookID);
                     cmd.Parameters.AddWithValue("@BORROWERID", borrowerID);
                     cmd.Parameters.AddWithValue("@BorrowedDate",DateTime.Now);
-                    cmd.Parameters.AddWithValue("@ReturnDate",DateTime.Now.AddDays(14));
+                    cmd.Parameters.AddWithValue("@ReturnDate", DateTime.Today.AddDays(15).AddSeconds(-1));  // after 14 days : 11:59:59 pm = 23:59:59);
 
                     // Output parameter
                     SqlParameter messageParam = new SqlParameter("@MESSAGE", SqlDbType.NVarChar, 200);

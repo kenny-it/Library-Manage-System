@@ -33,9 +33,8 @@
             FinishBtn = new Button();
             BorrowerIDLable = new Label();
             BookIDLable = new Label();
-            BorrowerIDText = new NumericUpDown();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).BeginInit();
+            BorrowerIDText = new TextBox();
             SuspendLayout();
             // 
             // BookIDText
@@ -83,16 +82,6 @@
             BookIDLable.TabIndex = 5;
             BookIDLable.Text = "Book ID";
             // 
-            // BorrowerIDText
-            // 
-            BorrowerIDText.Location = new Point(99, 77);
-            BorrowerIDText.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
-            BorrowerIDText.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            BorrowerIDText.Name = "BorrowerIDText";
-            BorrowerIDText.Size = new Size(150, 27);
-            BorrowerIDText.TabIndex = 6;
-            BorrowerIDText.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -102,13 +91,20 @@
             label1.TabIndex = 7;
             label1.Text = "Please enter your borrower ID and the book ID you wish to borrow.";
             // 
+            // BorrowerIDText
+            // 
+            BorrowerIDText.Location = new Point(98, 80);
+            BorrowerIDText.Name = "BorrowerIDText";
+            BorrowerIDText.Size = new Size(125, 27);
+            BorrowerIDText.TabIndex = 8;
+            // 
             // BorroweBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
             Controls.Add(BorrowerIDText);
+            Controls.Add(label1);
             Controls.Add(BookIDLable);
             Controls.Add(BorrowerIDLable);
             Controls.Add(FinishBtn);
@@ -116,7 +112,6 @@
             Controls.Add(BookIDText);
             Name = "BorroweBooks";
             Text = "BorroweBooks";
-            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -127,7 +122,7 @@
         private Button FinishBtn;
         private Label BorrowerIDLable;
         private Label BookIDLable;
-        private NumericUpDown BorrowerIDText;
         private Label label1;
+        private TextBox BorrowerIDText;
     }
 }

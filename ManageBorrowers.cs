@@ -39,5 +39,11 @@ namespace Library_Manage_System
             RemoveBorrower removeBorrower = new RemoveBorrower();
             removeBorrower.ShowDialog();
         }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            AddBorrower addBorrower = new AddBorrower();
+            addBorrower.ShowDialog();
+        }
     }
 }

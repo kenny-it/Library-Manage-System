@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             borrowerLabel = new Label();
-            BorrowerIDText = new NumericUpDown();
             RemoveBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).BeginInit();
+            BorrowerIDText = new TextBox();
             SuspendLayout();
             // 
             // borrowerLabel
@@ -43,13 +42,6 @@
             borrowerLabel.TabIndex = 0;
             borrowerLabel.Text = "Please enter the ID of the borrower you wish to remove:";
             // 
-            // BorrowerIDText
-            // 
-            BorrowerIDText.Location = new Point(38, 94);
-            BorrowerIDText.Name = "BorrowerIDText";
-            BorrowerIDText.Size = new Size(150, 27);
-            BorrowerIDText.TabIndex = 1;
-            // 
             // RemoveBtn
             // 
             RemoveBtn.Location = new Point(40, 173);
@@ -60,17 +52,23 @@
             RemoveBtn.UseVisualStyleBackColor = true;
             RemoveBtn.Click += RemoveBtn_Click;
             // 
+            // BorrowerIDText
+            // 
+            BorrowerIDText.Location = new Point(50, 95);
+            BorrowerIDText.Name = "BorrowerIDText";
+            BorrowerIDText.Size = new Size(125, 27);
+            BorrowerIDText.TabIndex = 3;
+            // 
             // RemoveBorrower
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(RemoveBtn);
             Controls.Add(BorrowerIDText);
+            Controls.Add(RemoveBtn);
             Controls.Add(borrowerLabel);
             Name = "RemoveBorrower";
             Text = "RemoveBorrower";
-            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -78,7 +76,7 @@
         #endregion
 
         private Label borrowerLabel;
-        private NumericUpDown BorrowerIDText;
         private Button RemoveBtn;
+        private TextBox BorrowerIDText;
     }
 }

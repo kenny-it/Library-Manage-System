@@ -66,6 +66,7 @@
             AddBtn.TabIndex = 2;
             AddBtn.Text = "2.3 Add borrower";
             AddBtn.UseVisualStyleBackColor = true;
+            AddBtn.Click += AddBtn_Click;
             // 
             // RemoveBtn
             // 

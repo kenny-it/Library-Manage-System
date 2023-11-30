@@ -23,8 +23,8 @@ namespace Library_Manage_System
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
             // Verify borrower id
-            int borrowerID = (int)BorrowerIDText.Value;
-            if (borrowerID <= 0 )
+            string borrowerID = BorrowerIDText.Text.Trim();
+            if (borrowerID == "" )
             {
                 MessageBox.Show("Invalid borrower ID. Please make sure you entered the correct ID.");
                 return;
@@ -82,14 +82,14 @@ namespace Library_Manage_System
                             {
                                 command.Connection = conn;
                                 command.CommandType = CommandType.Text;
-                                command.CommandText = $"DELETE FROM [Library].[Borrower] WHERE ID=@borrowerID";
+                                command.CommandText = $"DELETE FROM [Library].[Borrower] WHERE BorrowerID=@borrowerID";
                                 command.Parameters.AddWithValue("@borrowerID", borrowerID);
 
                                 command.ExecuteNonQuery();
 
                             }
                             this.Close();
-                            MessageBox.Show($"Borrower {name} has been successfully removed from the system.");
+                            MessageBox.Show($"Borrower {borrowerID} has been successfully removed from the system.");
                         }
 
                     } else

@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             borrowerIDLabel = new Label();
-            BorrowerIDText = new NumericUpDown();
             SearchBtn = new Button();
             BorrowerDetailDataGrid = new DataGridView();
             BackBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).BeginInit();
+            BorrowerIDText = new TextBox();
             ((System.ComponentModel.ISupportInitialize)BorrowerDetailDataGrid).BeginInit();
             SuspendLayout();
             // 
@@ -45,16 +44,6 @@
             borrowerIDLabel.Size = new Size(92, 20);
             borrowerIDLabel.TabIndex = 0;
             borrowerIDLabel.Text = "BorrowerID: ";
-            // 
-            // BorrowerIDText
-            // 
-            BorrowerIDText.Location = new Point(64, 113);
-            BorrowerIDText.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
-            BorrowerIDText.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            BorrowerIDText.Name = "BorrowerIDText";
-            BorrowerIDText.Size = new Size(150, 27);
-            BorrowerIDText.TabIndex = 1;
-            BorrowerIDText.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // SearchBtn
             // 
@@ -91,19 +80,25 @@
             BackBtn.UseVisualStyleBackColor = true;
             BackBtn.Click += BackBtn_Click;
             // 
+            // BorrowerIDText
+            // 
+            BorrowerIDText.Location = new Point(64, 94);
+            BorrowerIDText.Name = "BorrowerIDText";
+            BorrowerIDText.Size = new Size(125, 27);
+            BorrowerIDText.TabIndex = 5;
+            // 
             // SearchBorrower
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BorrowerIDText);
             Controls.Add(BackBtn);
             Controls.Add(BorrowerDetailDataGrid);
             Controls.Add(SearchBtn);
-            Controls.Add(BorrowerIDText);
             Controls.Add(borrowerIDLabel);
             Name = "SearchBorrower";
             Text = "SearchBorrower";
-            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).EndInit();
             ((System.ComponentModel.ISupportInitialize)BorrowerDetailDataGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -112,9 +107,9 @@
         #endregion
 
         private Label borrowerIDLabel;
-        private NumericUpDown BorrowerIDText;
         private Button SearchBtn;
         private DataGridView BorrowerDetailDataGrid;
         private Button BackBtn;
+        private TextBox BorrowerIDText;
     }
 }
