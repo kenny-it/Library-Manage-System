@@ -37,5 +37,11 @@ namespace Library_Manage_System
             MemberList memberList = new MemberList();
             memberList.ShowDialog(this);
         }
+
+        private void R3_Click(object sender, EventArgs e)
+        {
+            BorroweBooks borrowes = new BorroweBooks(); 
+            borrowes.ShowDialog(this);
+        }
     }
 }

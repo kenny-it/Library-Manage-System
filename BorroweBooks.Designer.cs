@@ -28,27 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BorrowerIDBtn = new TextBox();
-            BookIDBtn = new TextBox();
+            BookIDText = new TextBox();
             BorrowBtn = new Button();
-            button2 = new Button();
+            FinishBtn = new Button();
             BorrowerIDLable = new Label();
             BookIDLable = new Label();
+            BorrowerIDText = new NumericUpDown();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).BeginInit();
             SuspendLayout();
             // 
-            // BorrowerIDBtn
+            // BookIDText
             // 
-            BorrowerIDBtn.Location = new Point(94, 77);
-            BorrowerIDBtn.Name = "BorrowerIDBtn";
-            BorrowerIDBtn.Size = new Size(146, 27);
-            BorrowerIDBtn.TabIndex = 0;
-            // 
-            // BookIDBtn
-            // 
-            BookIDBtn.Location = new Point(94, 168);
-            BookIDBtn.Name = "BookIDBtn";
-            BookIDBtn.Size = new Size(146, 27);
-            BookIDBtn.TabIndex = 1;
+            BookIDText.Location = new Point(94, 168);
+            BookIDText.Name = "BookIDText";
+            BookIDText.Size = new Size(146, 27);
+            BookIDText.TabIndex = 1;
             // 
             // BorrowBtn
             // 
@@ -60,14 +55,15 @@
             BorrowBtn.UseVisualStyleBackColor = true;
             BorrowBtn.Click += BorrowBtn_Click;
             // 
-            // button2
+            // FinishBtn
             // 
-            button2.Location = new Point(632, 377);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            FinishBtn.Location = new Point(632, 377);
+            FinishBtn.Name = "FinishBtn";
+            FinishBtn.Size = new Size(94, 29);
+            FinishBtn.TabIndex = 3;
+            FinishBtn.Text = "Finish";
+            FinishBtn.UseVisualStyleBackColor = true;
+            FinishBtn.Click += FinishBtn_Click;
             // 
             // BorrowerIDLable
             // 
@@ -87,30 +83,51 @@
             BookIDLable.TabIndex = 5;
             BookIDLable.Text = "Book ID";
             // 
+            // BorrowerIDText
+            // 
+            BorrowerIDText.Location = new Point(99, 77);
+            BorrowerIDText.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
+            BorrowerIDText.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            BorrowerIDText.Name = "BorrowerIDText";
+            BorrowerIDText.Size = new Size(150, 27);
+            BorrowerIDText.TabIndex = 6;
+            BorrowerIDText.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(94, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(451, 20);
+            label1.TabIndex = 7;
+            label1.Text = "Please enter your borrower ID and the book ID you wish to borrow.";
+            // 
             // BorroweBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(BorrowerIDText);
             Controls.Add(BookIDLable);
             Controls.Add(BorrowerIDLable);
-            Controls.Add(button2);
+            Controls.Add(FinishBtn);
             Controls.Add(BorrowBtn);
-            Controls.Add(BookIDBtn);
-            Controls.Add(BorrowerIDBtn);
+            Controls.Add(BookIDText);
             Name = "BorroweBooks";
             Text = "BorroweBooks";
+            ((System.ComponentModel.ISupportInitialize)BorrowerIDText).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox BorrowerIDBtn;
-        private TextBox BookIDBtn;
+        private TextBox BookIDText;
         private Button BorrowBtn;
-        private Button button2;
+        private Button FinishBtn;
         private Label BorrowerIDLable;
         private Label BookIDLable;
+        private NumericUpDown BorrowerIDText;
+        private Label label1;
     }
 }
