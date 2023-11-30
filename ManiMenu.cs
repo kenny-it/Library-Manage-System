@@ -9,9 +9,12 @@ namespace Library_Manage_System
 
         private void ManiMenu_Load(object sender, EventArgs e)
         {
-            // Display welcome message
-            CustMessageBox custMessageBox = new CustMessageBox();
-            custMessageBox.ShowDialog(this);
+            Login login = new Login();
+            DialogResult result = login.ShowDialog();
+            if (result != DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void R7_Click(object sender, EventArgs e)
@@ -40,8 +43,15 @@ namespace Library_Manage_System
 
         private void R3_Click(object sender, EventArgs e)
         {
-            BorroweBooks borrowes = new BorroweBooks(); 
+            BorroweBooks borrowes = new BorroweBooks();
             borrowes.ShowDialog(this);
+        }
+
+        private void R5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Useful feature is design to manage the login users.");
+            ManageUser manageUser = new ManageUser();   
+            manageUser.ShowDialog(this);
         }
     }
 }

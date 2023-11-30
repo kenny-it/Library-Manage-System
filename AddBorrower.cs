@@ -107,15 +107,13 @@ namespace Library_Manage_System
                             connection.Open();
                             sqlCommand.ExecuteNonQuery();
                             MessageBox.Show("Borrower account has been created.");
+                            this.Close();
                         }
                         catch
                         {
                             MessageBox.Show("ID was not returned. Account could not be created.");
                         }
-                        finally
-                        {
-                            connection.Close();
-                        }
+                       
                     }
 
                 }

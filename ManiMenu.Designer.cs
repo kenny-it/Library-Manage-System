@@ -77,8 +77,9 @@
             R5.Name = "R5";
             R5.Size = new Size(176, 44);
             R5.TabIndex = 3;
-            R5.Text = "R5 Useful Features";
+            R5.Text = "R5 Useful feature";
             R5.UseVisualStyleBackColor = true;
+            R5.Click += R5_Click;
             // 
             // R6
             // 

@@ -30,16 +30,17 @@
         {
             panel1 = new Panel();
             ok = new Button();
-            label1 = new Label();
+            Welcome = new Label();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.LightSkyBlue;
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 236);
+            panel1.Location = new Point(0, 314);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(451, 28);
+            panel1.Size = new Size(628, 37);
             panel1.TabIndex = 0;
             // 
             // ok
@@ -49,34 +50,37 @@
             ok.FlatAppearance.BorderSize = 0;
             ok.FlatStyle = FlatStyle.Flat;
             ok.Font = new Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            ok.Location = new Point(149, 164);
+            ok.Location = new Point(223, 211);
+            ok.Margin = new Padding(3, 4, 3, 4);
             ok.Name = "ok";
-            ok.Size = new Size(133, 47);
+            ok.Size = new Size(152, 63);
             ok.TabIndex = 1;
             ok.Text = "O K";
             ok.UseVisualStyleBackColor = false;
             ok.Click += ok_Click;
             // 
-            // label1
+            // Welcome
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(112, 89);
-            label1.Name = "label1";
-            label1.Size = new Size(193, 30);
-            label1.TabIndex = 2;
-            label1.Text = "Welcome Message";
-            label1.Click += label1_Click;
+            Welcome.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Welcome.AutoSize = true;
+            Welcome.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Welcome.Location = new Point(132, 84);
+            Welcome.Name = "Welcome";
+            Welcome.Size = new Size(99, 28);
+            Welcome.TabIndex = 2;
+            Welcome.Text = "Welcome";
+            Welcome.Click += label1_Click;
             // 
             // CustMessageBox
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(451, 264);
-            Controls.Add(label1);
+            ClientSize = new Size(628, 351);
+            Controls.Add(Welcome);
             Controls.Add(ok);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "CustMessageBox";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CustMessageBox";
@@ -89,6 +93,6 @@
 
         private Panel panel1;
         private Button ok;
-        private Label label1;
+        private Label Welcome;
     }
 }

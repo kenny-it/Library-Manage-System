@@ -36,17 +36,18 @@ namespace Library_Manage_System
             else if (keyword.Contains(" "))
             {
                 string[] keywords = keyword.Split(' ');
-                
-                for (int i = 0; i< keywords.Length; i++)
+
+                for (int i = 0; i < keywords.Length; i++)
                 {
-                    if (i == keywords.Length -1)
+                    if (i == keywords.Length - 1)
                     {
                         queryText += $" CONCAT(ID,Title,Author,Publisher) like '%{keywords[i]}%' ";
-                    } else
+                    }
+                    else
                     {
                         queryText += $" CONCAT(ID,Title,Author,Publisher) like '%{keywords[i]}%' OR";
                     }
-                    
+
                 }
             }
             // Only Single keyword
@@ -77,6 +78,11 @@ namespace Library_Manage_System
             }
 
 
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

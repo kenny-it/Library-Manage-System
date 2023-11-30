@@ -7,6 +7,9 @@
     <Compile Update="AddBorrower.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="BorroweBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -19,10 +22,22 @@
     <Compile Update="DisplayBorrowers.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DisplayHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DisplayUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ManageBooks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ManageBorrowers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ManiMenu.cs">
@@ -35,6 +50,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RemoveBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RemoveUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReturnBooks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SearchBook.cs">
