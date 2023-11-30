@@ -46,7 +46,7 @@ namespace Library_Manage_System
                     cmd.Parameters.AddWithValue("@BOOID", bookID);
                     cmd.Parameters.AddWithValue("@BORROWERID", borrowerID);
                     cmd.Parameters.AddWithValue("@BorrowedDate",DateTime.Now);
-                    cmd.Parameters.AddWithValue("@ReturnDate",DateTime.Now);
+                    cmd.Parameters.AddWithValue("@ReturnDate",DateTime.Now.AddDays(14));
 
                     // Output parameter
                     SqlParameter messageParam = new SqlParameter("@MESSAGE", SqlDbType.NVarChar, 200);
