@@ -40,7 +40,8 @@ namespace Library_Manage_System
                     {
                         cmd.Connection = conn;
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = $"DELETE FROM [Library].[Book] WHERE ID = {bookId}";
+                        cmd.CommandText = $"DELETE FROM [Library].[Book] WHERE ID=@bookId";
+                        cmd.Parameters.AddWithValue("@bookId", bookId);
 
                         cmd.ExecuteNonQuery();
                         

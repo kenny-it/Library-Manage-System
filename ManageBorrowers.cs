@@ -27,5 +27,17 @@ namespace Library_Manage_System
             DisplayBorrowers displayBorrowers = new DisplayBorrowers();
             displayBorrowers.ShowDialog();
         }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            SearchBorrower searchBorrower = new SearchBorrower();
+            searchBorrower.ShowDialog();
+        }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            RemoveBorrower removeBorrower = new RemoveBorrower();
+            removeBorrower.ShowDialog();
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace Library_Manage_System
 {
     public partial class DisplayBooks : Form
     {
+        string connectionString = Properties.Settings.Default.connString;
+
         public DisplayBooks()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace Library_Manage_System
 
         private void DisplayBooks_Load(object sender, EventArgs e)
         {
-            string connectionString = Properties.Settings.Default.connString;
+            
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();

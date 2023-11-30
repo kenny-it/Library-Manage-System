@@ -14,6 +14,7 @@ namespace Library_Manage_System
 {
     public partial class DisplayBorrowers : Form
     {
+        string connectionString = Properties.Settings.Default.connString;
         public DisplayBorrowers()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace Library_Manage_System
 
         private void DisplayBorrowers_Load(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();

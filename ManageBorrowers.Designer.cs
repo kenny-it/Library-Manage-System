@@ -37,9 +37,10 @@
             // 
             // DisplayBtn
             // 
-            DisplayBtn.Location = new Point(76, 72);
+            DisplayBtn.Location = new Point(87, 96);
+            DisplayBtn.Margin = new Padding(3, 4, 3, 4);
             DisplayBtn.Name = "DisplayBtn";
-            DisplayBtn.Size = new Size(144, 47);
+            DisplayBtn.Size = new Size(165, 63);
             DisplayBtn.TabIndex = 0;
             DisplayBtn.Text = "2.1 Display borrowers";
             DisplayBtn.UseVisualStyleBackColor = true;
@@ -47,36 +48,42 @@
             // 
             // SearchBtn
             // 
-            SearchBtn.Location = new Point(76, 237);
+            SearchBtn.Location = new Point(87, 316);
+            SearchBtn.Margin = new Padding(3, 4, 3, 4);
             SearchBtn.Name = "SearchBtn";
-            SearchBtn.Size = new Size(144, 47);
+            SearchBtn.Size = new Size(165, 63);
             SearchBtn.TabIndex = 1;
             SearchBtn.Text = "2.2 Search borrower";
             SearchBtn.UseVisualStyleBackColor = true;
+            SearchBtn.Click += SearchBtn_Click;
             // 
             // AddBtn
             // 
-            AddBtn.Location = new Point(435, 72);
+            AddBtn.Location = new Point(497, 96);
+            AddBtn.Margin = new Padding(3, 4, 3, 4);
             AddBtn.Name = "AddBtn";
-            AddBtn.Size = new Size(144, 47);
+            AddBtn.Size = new Size(165, 63);
             AddBtn.TabIndex = 2;
             AddBtn.Text = "2.3 Add borrower";
             AddBtn.UseVisualStyleBackColor = true;
             // 
             // RemoveBtn
             // 
-            RemoveBtn.Location = new Point(435, 237);
+            RemoveBtn.Location = new Point(497, 316);
+            RemoveBtn.Margin = new Padding(3, 4, 3, 4);
             RemoveBtn.Name = "RemoveBtn";
-            RemoveBtn.Size = new Size(144, 47);
+            RemoveBtn.Size = new Size(165, 63);
             RemoveBtn.TabIndex = 3;
             RemoveBtn.Text = "2.4 Remove borrower";
             RemoveBtn.UseVisualStyleBackColor = true;
+            RemoveBtn.Click += RemoveBtn_Click;
             // 
             // Back
             // 
-            Back.Location = new Point(608, 379);
+            Back.Location = new Point(695, 505);
+            Back.Margin = new Padding(3, 4, 3, 4);
             Back.Name = "Back";
-            Back.Size = new Size(144, 47);
+            Back.Size = new Size(165, 63);
             Back.TabIndex = 4;
             Back.Text = "Back";
             Back.UseVisualStyleBackColor = true;
@@ -84,14 +91,15 @@
             // 
             // ManageBorrowers
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(Back);
             Controls.Add(RemoveBtn);
             Controls.Add(AddBtn);
             Controls.Add(SearchBtn);
             Controls.Add(DisplayBtn);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ManageBorrowers";
             Text = "ManageBorrowers";
             ResumeLayout(false);
