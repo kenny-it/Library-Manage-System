@@ -14,6 +14,7 @@ namespace Library_Manage_System
 {
     public partial class MemberList : Form
     {
+        string connectionString = Properties.Settings.Default.connString;
         public MemberList()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace Library_Manage_System
 
         private void MemberList_Load(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+           
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
