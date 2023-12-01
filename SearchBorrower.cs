@@ -42,6 +42,9 @@ namespace Library_Manage_System
                     DataTable datatable = new DataTable();
                     da.Fill(datatable);
                     this.BorrowerDetailDataGrid.DataSource = datatable;
+
+                    // Clear input
+                    BorrowerIDText.Clear();
                 }
             }
         }
@@ -49,6 +52,11 @@ namespace Library_Manage_System
         private void BackBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BorrowerIDText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

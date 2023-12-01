@@ -50,8 +50,32 @@ namespace Library_Manage_System
         private void R5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This Useful feature is design to manage the login users.");
-            ManageUser manageUser = new ManageUser();   
+            ManageUser manageUser = new ManageUser();
             manageUser.ShowDialog(this);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMax_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void R4_Click(object sender, EventArgs e)
+        {
+            ReturnBooks returnBooks = new ReturnBooks();
+            returnBooks.ShowDialog(this);
         }
     }
 }

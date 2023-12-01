@@ -14,7 +14,7 @@ namespace Library_Manage_System
     public partial class Login : Form
     {
         string connectionString = Properties.Settings.Default.connString;
-       
+
         public Login()
         {
             InitializeComponent();
@@ -51,18 +51,18 @@ namespace Library_Manage_System
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
 
-                    SqlParameter userParam = new SqlParameter("@username",SqlDbType.NVarChar,20);
+                    SqlParameter userParam = new SqlParameter("@username", SqlDbType.NVarChar, 20);
                     userParam.Value = username;
                     userParam.Direction = ParameterDirection.Input;
 
                     SqlParameter passParam = new SqlParameter("@password", SqlDbType.NVarChar, 20);
                     passParam.Value = password;
                     passParam.Direction = ParameterDirection.Input;
-                    
+
                     comm.Parameters.Add(userParam);
                     comm.Parameters.Add(passParam);
 
-                    SqlDataReader dr =  comm.ExecuteReader();
+                    SqlDataReader dr = comm.ExecuteReader();
                     if (dr.HasRows)
                     {
                         while (dr.Read())
@@ -85,10 +85,31 @@ namespace Library_Manage_System
                     {
                         MessageBox.Show("Username or Password incorrect.");
                     }
-                    
+
 
                 }
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.Text = string.Empty;
+            this.ControlBox = false;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

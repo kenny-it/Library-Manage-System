@@ -108,18 +108,27 @@ namespace Library_Manage_System
                             sqlCommand.ExecuteNonQuery();
                             MessageBox.Show("Borrower account has been created.");
                             this.Close();
+                            // Clear all input
+                            AddB_FName.Clear();
+                            AddB_LName.Clear();
+                            AddB_CNumber.Clear();
                         }
                         catch
                         {
                             MessageBox.Show("ID was not returned. Account could not be created.");
                         }
-                       
+
                     }
 
                 }
 
             }
-   
+
+        }
+
+        private void AddB_FName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -68,6 +68,12 @@ namespace Library_Manage_System
                     if (result)
                     {
                         MessageBox.Show("Insert into book success!");
+                        // Clear input
+                        IDText.Clear();
+                        TitleText.Clear();
+                        AuthorText.Clear();
+                        PublisherText.Clear();
+                        YearText.Value = 0;
                     } else
                     {
                         MessageBox.Show(errorMessage);

@@ -24,7 +24,7 @@ namespace Library_Manage_System
         {
             // Verify borrower id
             string borrowerID = BorrowerIDText.Text.Trim();
-            if (borrowerID == "" )
+            if (borrowerID == "")
             {
                 MessageBox.Show("Invalid borrower ID. Please make sure you entered the correct ID.");
                 return;
@@ -39,9 +39,9 @@ namespace Library_Manage_System
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     // Input parameter
-                    cmd.Parameters.AddWithValue("@BORROWERID", borrowerID);   
+                    cmd.Parameters.AddWithValue("@BORROWERID", borrowerID);
                     // Output parameter
-                    SqlParameter messageParam = new SqlParameter("@MESSAGE",SqlDbType.NVarChar,200);
+                    SqlParameter messageParam = new SqlParameter("@MESSAGE", SqlDbType.NVarChar, 200);
                     messageParam.Direction = ParameterDirection.Output;
                     cmd.Parameters.Add(messageParam);
 
@@ -62,7 +62,7 @@ namespace Library_Manage_System
                     string message = messageParam.Value.ToString();
                     string name = nameParam.Value.ToString();
                     string contact = contactParam.Value.ToString();
-                    bool result = (bool) resultParam.Value;
+                    bool result = (bool)resultParam.Value;
 
                     if (result)
                     {
@@ -92,7 +92,8 @@ namespace Library_Manage_System
                             MessageBox.Show($"Borrower {borrowerID} has been successfully removed from the system.");
                         }
 
-                    } else
+                    }
+                    else
                     {
                         MessageBox.Show(message);
                         return;
@@ -101,6 +102,11 @@ namespace Library_Manage_System
 
                 }
             }
+        }
+
+        private void BorrowerIDText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

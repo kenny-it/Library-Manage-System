@@ -35,21 +35,25 @@
             SearchBtn = new Button();
             SearchBookDataGrid = new DataGridView();
             BackBtn = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)SearchBookDataGrid).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // keywordLable
             // 
             keywordLable.AutoSize = true;
-            keywordLable.Location = new Point(35, 36);
+            keywordLable.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            keywordLable.Location = new Point(35, 137);
             keywordLable.Name = "keywordLable";
-            keywordLable.Size = new Size(71, 20);
+            keywordLable.Size = new Size(104, 28);
             keywordLable.TabIndex = 0;
-            keywordLable.Text = "keywords";
+            keywordLable.Text = "keywords :";
             // 
             // keywordText
             // 
-            keywordText.Location = new Point(35, 77);
+            keywordText.Location = new Point(35, 183);
             keywordText.MaxLength = 50;
             keywordText.Multiline = true;
             keywordText.Name = "keywordText";
@@ -58,12 +62,16 @@
             // 
             // SearchBtn
             // 
-            SearchBtn.Location = new Point(35, 166);
+            SearchBtn.BackColor = Color.Maroon;
+            SearchBtn.FlatStyle = FlatStyle.Popup;
+            SearchBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            SearchBtn.ForeColor = SystemColors.ControlLightLight;
+            SearchBtn.Location = new Point(35, 264);
             SearchBtn.Name = "SearchBtn";
             SearchBtn.Size = new Size(104, 42);
             SearchBtn.TabIndex = 2;
             SearchBtn.Text = "Search";
-            SearchBtn.UseVisualStyleBackColor = true;
+            SearchBtn.UseVisualStyleBackColor = false;
             SearchBtn.Click += SearchBtn_Click;
             // 
             // SearchBookDataGrid
@@ -71,6 +79,8 @@
             SearchBookDataGrid.AllowUserToAddRows = false;
             SearchBookDataGrid.AllowUserToDeleteRows = false;
             SearchBookDataGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            SearchBookDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            SearchBookDataGrid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             SearchBookDataGrid.BackgroundColor = Color.White;
             SearchBookDataGrid.ColumnHeadersHeight = 29;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -81,7 +91,7 @@
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             SearchBookDataGrid.DefaultCellStyle = dataGridViewCellStyle1;
-            SearchBookDataGrid.Location = new Point(284, 44);
+            SearchBookDataGrid.Location = new Point(211, 44);
             SearchBookDataGrid.Name = "SearchBookDataGrid";
             SearchBookDataGrid.ReadOnly = true;
             SearchBookDataGrid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
@@ -89,32 +99,60 @@
             SearchBookDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
             SearchBookDataGrid.RowTemplate.Height = 50;
             SearchBookDataGrid.RowTemplate.Resizable = DataGridViewTriState.True;
-            SearchBookDataGrid.Size = new Size(504, 308);
+            SearchBookDataGrid.Size = new Size(577, 308);
             SearchBookDataGrid.TabIndex = 3;
             // 
             // BackBtn
             // 
-            BackBtn.Location = new Point(35, 255);
+            BackBtn.BackColor = Color.Maroon;
+            BackBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BackBtn.ForeColor = SystemColors.Info;
+            BackBtn.Location = new Point(672, 389);
             BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(106, 39);
+            BackBtn.Size = new Size(116, 49);
             BackBtn.TabIndex = 4;
             BackBtn.Text = "Back";
-            BackBtn.UseVisualStyleBackColor = true;
+            BackBtn.UseVisualStyleBackColor = false;
             BackBtn.Click += BackBtn_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Maroon;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 46);
+            panel1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("MV Boli", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Info;
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(165, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Book Search";
             // 
             // SearchBook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(BackBtn);
             Controls.Add(SearchBookDataGrid);
             Controls.Add(SearchBtn);
             Controls.Add(keywordText);
             Controls.Add(keywordLable);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "SearchBook";
             Text = "SearchBook";
             ((System.ComponentModel.ISupportInitialize)SearchBookDataGrid).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -126,5 +164,7 @@
         private Button SearchBtn;
         private DataGridView SearchBookDataGrid;
         private Button BackBtn;
+        private Panel panel1;
+        private Label label1;
     }
 }

@@ -73,7 +73,8 @@ namespace Library_Manage_System
                     DataTable datatable = new DataTable();
                     da.Fill(datatable);
                     this.SearchBookDataGrid.DataSource = datatable;
-
+                    // Clear input
+                    keywordText.Clear();
                 }
             }
 

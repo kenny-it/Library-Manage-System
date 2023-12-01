@@ -36,34 +36,39 @@
             // borrowerLabel
             // 
             borrowerLabel.AutoSize = true;
-            borrowerLabel.Location = new Point(38, 48);
+            borrowerLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            borrowerLabel.Location = new Point(12, 53);
             borrowerLabel.Name = "borrowerLabel";
-            borrowerLabel.Size = new Size(377, 20);
+            borrowerLabel.Size = new Size(495, 28);
             borrowerLabel.TabIndex = 0;
             borrowerLabel.Text = "Please enter the ID of the borrower you wish to remove:";
             // 
             // RemoveBtn
             // 
-            RemoveBtn.Location = new Point(40, 173);
+            RemoveBtn.BackColor = Color.Maroon;
+            RemoveBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            RemoveBtn.ForeColor = SystemColors.Info;
+            RemoveBtn.Location = new Point(326, 170);
             RemoveBtn.Name = "RemoveBtn";
-            RemoveBtn.Size = new Size(164, 29);
+            RemoveBtn.Size = new Size(181, 46);
             RemoveBtn.TabIndex = 2;
             RemoveBtn.Text = "Remove Borrower";
-            RemoveBtn.UseVisualStyleBackColor = true;
+            RemoveBtn.UseVisualStyleBackColor = false;
             RemoveBtn.Click += RemoveBtn_Click;
             // 
             // BorrowerIDText
             // 
-            BorrowerIDText.Location = new Point(50, 95);
+            BorrowerIDText.Location = new Point(17, 97);
             BorrowerIDText.Name = "BorrowerIDText";
-            BorrowerIDText.Size = new Size(125, 27);
+            BorrowerIDText.Size = new Size(165, 27);
             BorrowerIDText.TabIndex = 3;
+            BorrowerIDText.TextChanged += BorrowerIDText_TextChanged;
             // 
             // RemoveBorrower
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(524, 285);
             Controls.Add(BorrowerIDText);
             Controls.Add(RemoveBtn);
             Controls.Add(borrowerLabel);

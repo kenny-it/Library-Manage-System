@@ -41,29 +41,32 @@
             // firstLable
             // 
             firstLable.AutoSize = true;
-            firstLable.Location = new Point(151, 82);
+            firstLable.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            firstLable.Location = new Point(138, 80);
             firstLable.Name = "firstLable";
-            firstLable.Size = new Size(80, 20);
+            firstLable.Size = new Size(115, 28);
             firstLable.TabIndex = 0;
-            firstLable.Text = "First Name";
+            firstLable.Text = "First Name :";
             // 
             // LastLabel
             // 
             LastLabel.AutoSize = true;
-            LastLabel.Location = new Point(151, 158);
+            LastLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LastLabel.Location = new Point(142, 139);
             LastLabel.Name = "LastLabel";
-            LastLabel.Size = new Size(79, 20);
+            LastLabel.Size = new Size(112, 28);
             LastLabel.TabIndex = 1;
-            LastLabel.Text = "Last Name";
+            LastLabel.Text = "Last Name :";
             // 
             // ContactLabel
             // 
             ContactLabel.AutoSize = true;
-            ContactLabel.Location = new Point(112, 220);
+            ContactLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ContactLabel.Location = new Point(86, 203);
             ContactLabel.Name = "ContactLabel";
-            ContactLabel.Size = new Size(118, 20);
+            ContactLabel.Size = new Size(166, 28);
             ContactLabel.TabIndex = 2;
-            ContactLabel.Text = "Contact Number";
+            ContactLabel.Text = "Contact Number :";
             // 
             // AddB_FName
             // 
@@ -71,46 +74,55 @@
             AddB_FName.Name = "AddB_FName";
             AddB_FName.Size = new Size(125, 27);
             AddB_FName.TabIndex = 3;
+            AddB_FName.TextChanged += AddB_FName_TextChanged;
             // 
             // AddB_LName
             // 
-            AddB_LName.Location = new Point(262, 155);
+            AddB_LName.Location = new Point(255, 141);
             AddB_LName.Name = "AddB_LName";
             AddB_LName.Size = new Size(125, 27);
             AddB_LName.TabIndex = 4;
             // 
             // AddB_CNumber
             // 
-            AddB_CNumber.Location = new Point(259, 213);
+            AddB_CNumber.Location = new Point(255, 206);
             AddB_CNumber.Name = "AddB_CNumber";
             AddB_CNumber.Size = new Size(125, 27);
             AddB_CNumber.TabIndex = 5;
             // 
             // AddB_Reset
             // 
-            AddB_Reset.Location = new Point(190, 304);
+            AddB_Reset.BackColor = Color.Maroon;
+            AddB_Reset.FlatStyle = FlatStyle.Popup;
+            AddB_Reset.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AddB_Reset.ForeColor = Color.White;
+            AddB_Reset.Location = new Point(255, 314);
             AddB_Reset.Name = "AddB_Reset";
-            AddB_Reset.Size = new Size(94, 29);
+            AddB_Reset.Size = new Size(94, 44);
             AddB_Reset.TabIndex = 6;
             AddB_Reset.Text = "Reset";
-            AddB_Reset.UseVisualStyleBackColor = true;
+            AddB_Reset.UseVisualStyleBackColor = false;
             AddB_Reset.Click += AddB_Reset_Click;
             // 
             // AddB_Enter
             // 
-            AddB_Enter.Location = new Point(345, 304);
+            AddB_Enter.BackColor = Color.Maroon;
+            AddB_Enter.FlatStyle = FlatStyle.Popup;
+            AddB_Enter.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AddB_Enter.ForeColor = SystemColors.Info;
+            AddB_Enter.Location = new Point(455, 314);
             AddB_Enter.Name = "AddB_Enter";
-            AddB_Enter.Size = new Size(94, 29);
+            AddB_Enter.Size = new Size(94, 44);
             AddB_Enter.TabIndex = 7;
             AddB_Enter.Text = "Enter";
-            AddB_Enter.UseVisualStyleBackColor = true;
+            AddB_Enter.UseVisualStyleBackColor = false;
             AddB_Enter.Click += AddB_Enter_Click;
             // 
             // AddBorrower
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(613, 412);
             Controls.Add(AddB_Enter);
             Controls.Add(AddB_Reset);
             Controls.Add(AddB_CNumber);

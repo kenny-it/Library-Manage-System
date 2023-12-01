@@ -33,7 +33,7 @@ namespace Library_Manage_System
                 conn.Open();
                 using (SqlCommand comm = new SqlCommand())
                 {
-                    comm.CommandText = "SELECT StudentID,StudentName,Class,TutorialGroup FROM [Library].[Members]";
+                    comm.CommandText = "SELECT StudentID,StudentName,Class,TutorialGroup FROM [Library].[Members] ORDER BY StudentName";
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
                     SqlDataAdapter da = new SqlDataAdapter(comm);

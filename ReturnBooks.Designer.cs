@@ -61,7 +61,7 @@
             // 
             BookIDText.Location = new Point(260, 135);
             BookIDText.Name = "BookIDText";
-            BookIDText.Size = new Size(146, 27);
+            BookIDText.Size = new Size(177, 27);
             BookIDText.TabIndex = 11;
             // 
             // label3
@@ -76,35 +76,42 @@
             // 
             // BorrowBtn
             // 
-            BorrowBtn.Location = new Point(260, 211);
+            BorrowBtn.BackColor = Color.Maroon;
+            BorrowBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BorrowBtn.ForeColor = Color.Gold;
+            BorrowBtn.Location = new Point(246, 202);
             BorrowBtn.Name = "BorrowBtn";
-            BorrowBtn.Size = new Size(94, 29);
+            BorrowBtn.Size = new Size(94, 41);
             BorrowBtn.TabIndex = 13;
             BorrowBtn.Text = "Return";
-            BorrowBtn.UseVisualStyleBackColor = true;
+            BorrowBtn.UseVisualStyleBackColor = false;
             BorrowBtn.Click += BorrowBtn_Click;
             // 
             // FinishBtn
             // 
-            FinishBtn.Location = new Point(360, 211);
+            FinishBtn.BackColor = Color.Maroon;
+            FinishBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FinishBtn.ForeColor = Color.WhiteSmoke;
+            FinishBtn.Location = new Point(363, 202);
             FinishBtn.Name = "FinishBtn";
-            FinishBtn.Size = new Size(94, 29);
+            FinishBtn.Size = new Size(94, 41);
             FinishBtn.TabIndex = 14;
             FinishBtn.Text = "Finish";
-            FinishBtn.UseVisualStyleBackColor = true;
+            FinishBtn.UseVisualStyleBackColor = false;
             FinishBtn.Click += FinishBtn_Click;
             // 
             // BorrowerIDText
             // 
             BorrowerIDText.Location = new Point(262, 70);
             BorrowerIDText.Name = "BorrowerIDText";
-            BorrowerIDText.Size = new Size(144, 27);
+            BorrowerIDText.Size = new Size(175, 27);
             BorrowerIDText.TabIndex = 15;
             // 
             // ReturnBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Gainsboro;
             ClientSize = new Size(478, 264);
             Controls.Add(BorrowerIDText);
             Controls.Add(FinishBtn);
@@ -113,6 +120,7 @@
             Controls.Add(BookIDText);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ReturnBooks";
             Text = "Return";
             ResumeLayout(false);

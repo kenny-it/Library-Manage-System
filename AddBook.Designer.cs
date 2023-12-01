@@ -45,47 +45,53 @@
             // IDLabel
             // 
             IDLabel.AutoSize = true;
-            IDLabel.Location = new Point(51, 70);
+            IDLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            IDLabel.Location = new Point(61, 70);
             IDLabel.Name = "IDLabel";
-            IDLabel.Size = new Size(31, 20);
+            IDLabel.Size = new Size(45, 28);
             IDLabel.TabIndex = 0;
-            IDLabel.Text = "ID: ";
+            IDLabel.Text = "ID : ";
             // 
             // AuthorLabel
             // 
             AuthorLabel.AutoSize = true;
-            AuthorLabel.Location = new Point(51, 198);
+            AuthorLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AuthorLabel.ForeColor = SystemColors.ControlText;
+            AuthorLabel.Location = new Point(24, 198);
             AuthorLabel.Name = "AuthorLabel";
-            AuthorLabel.Size = new Size(54, 20);
+            AuthorLabel.Size = new Size(82, 28);
             AuthorLabel.TabIndex = 1;
-            AuthorLabel.Text = "Author";
+            AuthorLabel.Text = "Author :";
             // 
             // YearLabel
             // 
             YearLabel.AutoSize = true;
+            YearLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             YearLabel.Location = new Point(51, 306);
             YearLabel.Name = "YearLabel";
-            YearLabel.Size = new Size(44, 20);
+            YearLabel.Size = new Size(62, 28);
             YearLabel.TabIndex = 2;
-            YearLabel.Text = "Year: ";
+            YearLabel.Text = "Year : ";
             // 
             // PublisherLabel
             // 
             PublisherLabel.AutoSize = true;
-            PublisherLabel.Location = new Point(51, 254);
+            PublisherLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            PublisherLabel.Location = new Point(8, 257);
             PublisherLabel.Name = "PublisherLabel";
-            PublisherLabel.Size = new Size(76, 20);
+            PublisherLabel.Size = new Size(106, 28);
             PublisherLabel.TabIndex = 3;
-            PublisherLabel.Text = "Publisher: ";
+            PublisherLabel.Text = "Publisher : ";
             // 
             // TitleLabel
             // 
             TitleLabel.AutoSize = true;
-            TitleLabel.Location = new Point(51, 130);
+            TitleLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TitleLabel.Location = new Point(43, 130);
             TitleLabel.Name = "TitleLabel";
-            TitleLabel.Size = new Size(45, 20);
+            TitleLabel.Size = new Size(63, 28);
             TitleLabel.TabIndex = 4;
-            TitleLabel.Text = "Title: ";
+            TitleLabel.Text = "Title : ";
             // 
             // IDText
             // 
@@ -116,7 +122,7 @@
             // 
             // PublisherText
             // 
-            PublisherText.Location = new Point(133, 251);
+            PublisherText.Location = new Point(112, 257);
             PublisherText.MaxLength = 50;
             PublisherText.Multiline = true;
             PublisherText.Name = "PublisherText";
@@ -125,7 +131,7 @@
             // 
             // YearText
             // 
-            YearText.Location = new Point(133, 306);
+            YearText.Location = new Point(112, 306);
             YearText.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             YearText.Name = "YearText";
             YearText.Size = new Size(150, 27);
@@ -133,19 +139,23 @@
             // 
             // AddBtn
             // 
-            AddBtn.Location = new Point(431, 361);
+            AddBtn.BackColor = Color.Maroon;
+            AddBtn.FlatStyle = FlatStyle.Popup;
+            AddBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AddBtn.ForeColor = Color.White;
+            AddBtn.Location = new Point(328, 293);
             AddBtn.Name = "AddBtn";
-            AddBtn.Size = new Size(138, 41);
+            AddBtn.Size = new Size(115, 44);
             AddBtn.TabIndex = 10;
             AddBtn.Text = "Add Book";
-            AddBtn.UseVisualStyleBackColor = true;
+            AddBtn.UseVisualStyleBackColor = false;
             AddBtn.Click += AddBtn_Click;
             // 
             // AddBook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(540, 399);
             Controls.Add(AddBtn);
             Controls.Add(YearText);
             Controls.Add(PublisherText);

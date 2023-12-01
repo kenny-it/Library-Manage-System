@@ -65,8 +65,8 @@ namespace Library_Manage_System
                         // if success
                         MessageBox.Show("The book has been successfully returned.");
                         // clear the book ID field
-                        BookIDText.Text = "";
-
+                        BookIDText.Clear();
+                        BorrowerIDText.Clear();
                     }
                     else
                     {

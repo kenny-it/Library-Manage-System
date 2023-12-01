@@ -36,7 +36,7 @@ namespace Library_Manage_System
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    using(SqlCommand cmd = new SqlCommand())
+                    using (SqlCommand cmd = new SqlCommand())
                     {
                         cmd.Connection = conn;
                         cmd.CommandType = CommandType.Text;
@@ -44,29 +44,32 @@ namespace Library_Manage_System
                         cmd.Parameters.AddWithValue("@bookId", bookId);
 
                         cmd.ExecuteNonQuery();
-                        
+
+                        // Clear input 
+                        BookIDText.Clear();
+
                     }
                 }
                 this.Close();
             }
-                
+
         }
 
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
             // Retrieve Book ID
             string bookID = BookIDText.Text.Trim();
-            if(bookID == "")
+            if (bookID == "")
             {
                 MessageBox.Show("Please input the Book ID.");
                 return;
             }
 
             // retrieve result from store procedure
-            using(SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                using(SqlCommand cmd = new SqlCommand("REMOVEBOOK",conn))
+                using (SqlCommand cmd = new SqlCommand("REMOVEBOOK", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
@@ -94,20 +97,26 @@ namespace Library_Manage_System
                     string bookDetails = bookDetailsParam.Value.ToString();
                     string availability = isAvailableParam.Value.ToString();
                     string message = messageParam.Value.ToString();
-                    bool result = (bool) resultParam.Value;
+                    bool result = (bool)resultParam.Value;
 
                     if (result)
                     {
                         // Verify user confirm
                         WaitForUserConfirm(bookID, bookDetails, availability);
-                       
-                    }else
+
+                    }
+                    else
                     {
                         // the book ID is not found, or the book is not available
                         MessageBox.Show(message);
                     }
                 }
             }
+        }
+
+        private void BookIDText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

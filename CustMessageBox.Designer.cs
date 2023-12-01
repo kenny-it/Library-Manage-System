@@ -35,7 +35,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.LightSkyBlue;
+            panel1.BackColor = Color.Maroon;
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 314);
             panel1.Margin = new Padding(3, 4, 3, 4);
@@ -45,11 +45,12 @@
             // 
             // ok
             // 
-            ok.BackColor = Color.LightSkyBlue;
+            ok.BackColor = Color.Maroon;
             ok.FlatAppearance.BorderColor = Color.White;
             ok.FlatAppearance.BorderSize = 0;
             ok.FlatStyle = FlatStyle.Flat;
-            ok.Font = new Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ok.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            ok.ForeColor = Color.White;
             ok.Location = new Point(223, 211);
             ok.Margin = new Padding(3, 4, 3, 4);
             ok.Name = "ok";

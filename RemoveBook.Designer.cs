@@ -36,36 +36,41 @@
             // BookIDLabel
             // 
             BookIDLabel.AutoSize = true;
+            BookIDLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BookIDLabel.Location = new Point(82, 66);
             BookIDLabel.Name = "BookIDLabel";
-            BookIDLabel.Size = new Size(116, 20);
+            BookIDLabel.Size = new Size(156, 28);
             BookIDLabel.TabIndex = 0;
-            BookIDLabel.Text = "RemoveBook ID";
+            BookIDLabel.Text = "Remove Book ID";
             // 
             // BookIDText
             // 
-            BookIDText.Location = new Point(85, 105);
+            BookIDText.Location = new Point(87, 100);
             BookIDText.MaxLength = 20;
             BookIDText.Multiline = true;
             BookIDText.Name = "BookIDText";
-            BookIDText.Size = new Size(125, 34);
+            BookIDText.Size = new Size(159, 34);
             BookIDText.TabIndex = 1;
+            BookIDText.TextChanged += BookIDText_TextChanged;
             // 
             // RemoveBtn
             // 
-            RemoveBtn.Location = new Point(117, 238);
+            RemoveBtn.BackColor = Color.Maroon;
+            RemoveBtn.Font = new Font("MV Boli", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            RemoveBtn.ForeColor = SystemColors.Info;
+            RemoveBtn.Location = new Point(340, 184);
             RemoveBtn.Name = "RemoveBtn";
-            RemoveBtn.Size = new Size(94, 29);
+            RemoveBtn.Size = new Size(142, 51);
             RemoveBtn.TabIndex = 2;
             RemoveBtn.Text = "Remove book";
-            RemoveBtn.UseVisualStyleBackColor = true;
+            RemoveBtn.UseVisualStyleBackColor = false;
             RemoveBtn.Click += RemoveBtn_Click;
             // 
             // RemoveBook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(599, 262);
             Controls.Add(RemoveBtn);
             Controls.Add(BookIDText);
             Controls.Add(BookIDLabel);
